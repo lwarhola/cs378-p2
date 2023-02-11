@@ -1,2 +1,2 @@
-# cs378-p1
+# cs378-p2
 by: Lauren Warhola
