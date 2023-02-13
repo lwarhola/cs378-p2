@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
 
+<script src="script.js"></script>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
@@ -23,66 +24,95 @@
   <div class="subheading-2">The fresh choice of UT!</div>
   <div class="row">
     <div class="col-3">
-      <img src="macncheese.png" alt="picture of mac and cheese" class="listimage"/>
+      <img src="macncheese.png" alt="picture of mac and cheese" class="listimage" />
     </div>
     <div class="col">
       <div class="row">
         <div class="col">mac & cheese</div>
-        <div class="col-2">
+        <div class="col-2" id="macncheeseCost">
           $5
         </div>
       </div>
-      <div class="row-sm-2">
-        <button>order</button>
+      <div class="row">
+        <div class="col-sm-2">
+          <button onClick="decrement('macncheeseCount', 'subtotal', 'macncheeseCost')">-</button>
+          <i id="macncheeseCount">0</i>
+          <button onClick="increment('macncheeseCount', 'subtotal', 'macncheeseCost')">+</button>
+        </div>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-3">
-      <img src="pasta.png" alt="picture of pasta" class="listimage"/>
+      <img src="pasta.png" alt="picture of pasta" class="listimage" />
     </div>
     <div class="col">
       <div class="row">
         <div class="col">pasta</div>
-        <div class="col-2">
+        <div class="col-2" id="pastaCost">
           $8
         </div>
       </div>
-      <div class="row-sm-2">
-        <button>order</button>
+      <div class="row">
+        <div class="col-sm-2">
+          <button onclick="decrement('pastaCount', 'subtotal', 'pastaCost')">-</button>
+          <i id="pastaCount">0</i>
+          <button onclick="increment('pastaCount', 'subtotal', 'pastaCost')">+</button>
+        </div>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-3">
-      <img src="tacos.png" alt="picture of tacos" class="listimage"/>
+      <img src="tacos.png" alt="picture of tacos" class="listimage" />
     </div>
     <div class="col">
       <div class="row">
         <div class="col">tacos</div>
-        <div class="col-2">
+        <div class="col-2" id="tacosCost">
           $8
         </div>
       </div>
-      <div class="row-sm-2">
-        <button>order</button>
+      <div class="row">
+        <div class="col-sm-2">
+          <button onclick="decrement('tacosCount', 'subtotal', 'tacosCost')">-</button>
+          <i id="tacosCount">0</i>
+          <button onclick="increment('tacosCount', 'subtotal', 'tacosCost')">+</button>
+        </div>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-3">
-      <img src="enchiladas.png" alt="picture of an enchilada" class="listimage"/>
+      <img src="enchiladas.png" alt="picture of an enchilada" class="listimage" />
     </div>
     <div class="col">
       <div class="row">
         <div class="col">enchilada</div>
-        <div class="col-2">
+        <div class="col-4" id="enchiladaCost">
           $10
         </div>
       </div>
-      <div class="row-sm-2">
-        <button>order</button>
+      <div class="row">
+        <div class="col-sm-2">
+          <button onclick="decrement('enchiladaCount', 'subtotal', 'enchiladaCost')">-</button>
+          <i id="enchiladaCount">0</i>
+          <button onclick="increment('enchiladaCount', 'subtotal', 'enchiladaCost')">+</button>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5">
+      <div id="subtotal">
+        Subtotal $0
+      </div>
+    </div>
+    <div class="col-3">
+      <button class="order">Order</button>
+    </div>
+    <div class="col-3">
+      <button class="clear">Clear all</button>
     </div>
   </div>
 </body>

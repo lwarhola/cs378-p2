@@ -12,13 +12,22 @@ body {
   margin-top: -17px;
   margin-left: 15px;
  }
+ .col-sm-2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  margin-top: -17px;
+  padding-right: 30px;
+  text-align: right;
+ }
  .col-2 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   text-align: left;
-  margin-top: -17px;
-  margin-right: 20px;
  }
+.col-3 {
+  text-align: right;
+  margin-left: 5px;
+}
 .row {
   padding-top:25px;
   margin-bottom: 10px;
@@ -51,16 +60,20 @@ body {
   text-align: left;
  }
 button{
-  border-radius: 15px;
-  background-color:rgba(132, 175, 241, 0.53);
-  width: 75px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
   font-size: 17px;
-  border-color: black;
-  align-content: left;
-  text-align: center;
-  font-family: cursive;
-  margin-left: 10px;
-  margin-top: 10px;
+ }
+ .clear {
+   width: 90px;
+   border-radius: 15px;
+   background-color: rgba(174, 180, 188, 0.53);
+ }
+ .order {
+   width: 70px;
+   border-radius: 15px;
+   background-color: rgba(132, 175, 241, 0.53);
  }
 .listimage {
   width: 76px;
