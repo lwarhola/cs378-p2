@@ -20,7 +20,7 @@ function decrement(x, total, y) {
     }
 }
 
-function clearAll() { 
+function clearAll() {
     let subtotal = document.getElementById("subtotal");
     let macncheeseCount = document.getElementById("macncheeseCount");
     let pastaCount = document.getElementById("pastaCount");
@@ -31,7 +31,28 @@ function clearAll() {
     pastaCount.innerText = "0";
     tacosCount.innerText = "0";
     enchiladaCount.innerText = "0";
+}
 
-
-
+function order() {
+    let macncheeseCount = document.getElementById("macncheeseCount").innerText;
+    let pastaCount = document.getElementById("pastaCount").innerText;
+    let tacosCount = document.getElementById("tacosCount").innerText;
+    let enchiladaCount = document.getElementById("enchiladaCount").innerText;
+    let message = "";
+    if (macncheeseCount > 0) {
+        message += macncheeseCount + " mac & cheese ";
+    }
+    if (pastaCount > 0) {
+        message += pastaCount + " pasta ";
+    }
+    if (tacosCount > 0) {
+        message += tacosCount + " tacos ";
+    }
+    if (enchiladaCount > 0) {
+        message += enchiladaCount + " enchilada ";
+    }
+    if (message === "") {
+        message = "No items in cart";
+    }
+    alert(message)
 }
