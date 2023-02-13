@@ -19,3 +19,19 @@ function decrement(x, total, y) {
         val.innerText = "0";
     }
 }
+
+function clearAll() { 
+    let subtotal = document.getElementById("subtotal");
+    let macncheeseCount = document.getElementById("macncheeseCount");
+    let pastaCount = document.getElementById("pastaCount");
+    let tacosCount = document.getElementById("tacosCount");
+    let enchiladaCount = document.getElementById("enchiladaCount");
+    subtotal.innerText = "Subtotal $0";
+    macncheeseCount.innerText = "0";
+    pastaCount.innerText = "0";
+    tacosCount.innerText = "0";
+    enchiladaCount.innerText = "0";
+
+
+
+}
