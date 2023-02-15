@@ -52,7 +52,7 @@ function order() {
         message += enchiladaCount + " enchilada ";
     }
     message = "Order Placed! " + message;
-    if (message === "") {
+    if (message === "Order Placed!") {
         message = "No items in cart";
     }
     alert(message)
