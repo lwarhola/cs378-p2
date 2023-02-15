@@ -51,6 +51,7 @@ function order() {
     if (enchiladaCount > 0) {
         message += enchiladaCount + " enchilada ";
     }
+    message = "Order Placed! " + message;
     if (message === "") {
         message = "No items in cart";
     }
